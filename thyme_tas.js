@@ -24,7 +24,7 @@ exports.buffer = tas_buffer;
 
 
 var t_count = 0;
-function timer_upload_action(num, content) {
+function timer_upload_action() {
     if (sh_state == 'crtci') {
         var parent = conf.cnt[num].parent + '/' + conf.cnt[num].name;
         sh_adn.crtci(parent, num, content, this, function (status, res_body, to, socket) {
